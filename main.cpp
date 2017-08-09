@@ -287,10 +287,10 @@ void Exercise3()
         szArray[i] = std::rand() % 100;
         std::cout << szArray[i] << " ";
 
-            if (szArray[i] < szArray[iMinimumIntIndex])
-                iMinimumIntIndex = i;
-            else if (szArray[i] > szArray[iMaximumIntIndex])
-                iMaximumIntIndex = i;
+        if (szArray[i] < szArray[iMinimumIntIndex])
+            iMinimumIntIndex = i;
+        else if (szArray[i] > szArray[iMaximumIntIndex])
+            iMaximumIntIndex = i;
     }
     std::cout << std::endl << std::endl;
     std::cout << "Minimum index is: " << iMinimumIntIndex << "; Maximum index is: " << iMaximumIntIndex << std::endl;
